@@ -1,0 +1,167 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+body {
+  background-image: url(./imgs/tai-background-anh-sang-dep-nhat-820x461.jpg);
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(204, 204, 204);
+  font-family: "Times New Roman";
+}
+
+.trang_chu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: rgb(211, 215, 216);
+  border-radius: 75px;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+.pic:hover h1 {
+  color: #0ce60c;
+}
+.pic:hover .trang_chu {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.pic:hover .trang_chu:before,
+.pic:hover .trang_chu:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e60c0c;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+.pic:hover .trang_chu:after {
+  background: #f3ce5e;
+  animation: 2s counterclockwise infinite;
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.underline-hover-effect:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #0ce60c;
+  transition: 0.5s;
+}
+
+.pic:hover .underline-hover-effect:before {
+  width: 100%;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}

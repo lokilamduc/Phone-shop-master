@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./SCSS/css/styles.css" />
+</head>
+
+<body>
+  <div class="header__all">
+    <div class="header__content">
+      <a href="../index.html">
+        <span class="logo">DT-Phone</span>
+      </a>
+      <nav class="text__content">
+        <ul>
+          <li>
+            <a href="../adminpage/index.html"><i class="fa-solid fa-user-gear"><span>admin</span></i>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html"><i class="fa-solid fa-house"><span>home</span></i></a>
+          </li>
+        </ul>
+        <button data-toggle="modal" data-target="#myModal" class="shopping" onclick="renderCart()">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <section class="carousel">
+    <div class="main-card" id="tblDanhSachSP">
+      <!-- <div class="card">
+        <div class="top-card">
+          <i class="fa-brands fa-android"></i>
+          <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+          <img class="product-img" src="../imgs/uk-galaxy-buds2-pro-r510-sm-r510nlvaeua-thumb-533240882.avif" alt="" />
+        </div>
+        <div class="bot-card">
+          <div class="name-card">
+            <strong class="product-name">Air Phone</strong>
+            <button class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="wrapper">
+            <h5>Cancelling Earphones</h5>
+            <p>
+              AirPods Pro have been designed to deliver active Noise
+              Cancellation for immersive sound.
+            </p>
+          </div>
+          <div class="purchase">
+            <p class="product-price">$400</p>
+            <span class="btn-add">
+              <div>
+                <button class="add-btn">Add</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top-card">
+          <i class="fa-brands fa-android"></i>
+          <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+          <img class="product-img" src="../imgs/vn-galaxy-a23-sm-a235-sm-a235flbgxxv-531678261.avif" alt="" />
+        </div>
+        <div class="bot-card">
+          <div class="name-card">
+            <strong class="product-name">SamSung Phone</strong>
+            <button class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="wrapper">
+            <h5>Cancelling Earphones</h5>
+            <p>
+              AirPods Pro have been designed to deliver active Noise
+              Cancellation for immersive sound.
+            </p>
+          </div>
+          <div class="purchase">
+            <p class="product-price">$1000</p>
+            <span class="btn-add">
+              <div>
+                <button class="add-btn">Add</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top-card">
+          <i class="fa-brands fa-android"></i>
+          <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+          <img class="product-img" src="../imgs/vn-galaxy-watch5-40mm-431117-sm-r905fzsaxxv-thumb-533192951.avif"
+            alt="" />
+        </div>
+        <div class="bot-card">
+          <div class="name-card">
+            <strong class="product-name">SamSung Watch</strong>
+            <button class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="wrapper">
+            <h5>Cancelling Earphones</h5>
+            <p>
+              AirPods Pro have been designed to deliver active Noise
+              Cancellation for immersive sound.
+            </p>
+          </div>
+          <div class="purchase">
+            <p class="product-price">$400</p>
+            <span class="btn-add">
+              <div>
+                <button class="add-btn">Add</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top-card">
+          <i class="fa-brands fa-android"></i>
+          <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+          <img class="product-img" src="../imgs/xam.webp" alt="" />
+        </div>
+        <div class="bot-card">
+          <div class="name-card">
+            <strong class="product-name">SamSung Ipap</strong>
+            <button class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="wrapper">
+            <h5>Cancelling Earphones</h5>
+            <p>
+              AirPods Pro have been designed to deliver active Noise
+              Cancellation for immersive sound.
+            </p>
+          </div>
+          <div class="purchase">
+            <p class="product-price">$800</p>
+            <span class="btn-add">
+              <div>
+                <button class="add-btn">Add</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top-card">
+          <i class="fa-brands fa-android"></i>
+          <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+          <img class="product-img" src="../imgs/galaxy-book-flex-alpha-1.png" alt="" />
+        </div>
+        <div class="bot-card">
+          <div class="name-card">
+            <strong class="product-name">Galaxy Book</strong>
+            <button class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="wrapper">
+            <h5>Wireless Laptop</h5>
+            <p>
+              AirPods Pro have been designed to deliver active Noise
+              Cancellation for immersive sound.
+            </p>
+          </div>
+          <div class="purchase">
+            <p class="product-price">$1400</p>
+            <span class="btn-add">
+              <div>
+                <button class="add-btn">Add</button>
+
+              </div>
+            </span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer__container">
+      <div class="footer__contact">
+        <ul>
+          <li>
+            <i class="fa fa-phone item-1"></i>
+            <span>1808-000-1989 <br />
+              +84 918-699-843</span>
+          </li>
+          <li>
+            <i class="fa fa-envelope item-1"></i><span>lamtrienduc89@gmail.com <br />
+              services@gmail.com</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt item-1"></i><span>565 Cao Thắng Quận 3 <br />
+              HCM City</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <div class="copyright__content">
+          <div class="content__left">
+            <p>
+              Copyright © 2023 <span>DT-TEAM</span> . All rights reserved.
+            </p>
+          </div>
+          <div class="content__right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Giỏ Hàng</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form-group">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="image">Hình Ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+              </tr>
+            </thead>
+            <tbody class="cartItem" id="cartItem">
+            </tbody>
+            <tfoot class="footer" id="footer">
+
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="../Customer/js/model/product.js"></script>
+    <script src="../Customer/js/services/productApi.js"></script>
+<script src="../Customer/js/controller/index.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+

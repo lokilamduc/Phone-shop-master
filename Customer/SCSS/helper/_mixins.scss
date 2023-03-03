@@ -1,0 +1,12 @@
+@mixin reponsive($screen) {
+    @if(map-has-key($map: $breakpoints, $key: $screen)) {
+    //   $width: map-get($map: $breakpoints,
+    //     $key: $screen,
+    //   );
+      @media screen and (min-width: map-get($map: $breakpoints,
+      $key: $screen,
+    )) {
+        @content;
+      }
+    }
+  }

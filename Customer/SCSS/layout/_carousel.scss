@@ -170,7 +170,7 @@
         color: black;
         padding: 0px 5px;
         font-size: 12px;
-        margin-left: 9px;
+        margin-left: 3px;
     }
     .subtract  {
         color: black;
@@ -195,7 +195,9 @@
     background-color: aqua;
     font-size: 13px;
 }
-
+.table{
+  text-align: center;
+}
 @include reponsive("md"){
   .carousel {
     overflow: hidden;

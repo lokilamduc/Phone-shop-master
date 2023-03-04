@@ -234,7 +234,7 @@ header {
   color: black;
   padding: 0px 5px;
   font-size: 12px;
-  margin-left: 9px;
+  margin-left: 3px;
 }
 
 .subtract {
@@ -260,6 +260,10 @@ header {
   border: 3px solid cadetblue;
   background-color: aqua;
   font-size: 13px;
+}
+
+.table {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

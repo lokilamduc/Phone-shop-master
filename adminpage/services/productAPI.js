@@ -18,7 +18,7 @@ function apiCreateProduct(product) {
   });
 }
 
-function apiDeleteProdcut(productId) {
+function apiDeleteProduct(productId) {
   return axios({
     method: "DELETE",
     url: `${URL}/${productId}`,

@@ -138,7 +138,7 @@ function renderProducts(products) {
   getElement("#tblDanhSachNguoiDung").innerHTML = html ;
 }
 
-getElement("#btnThemSP").addEventListener("click", () => {
+  getElement("#btnThemNguoiDung").addEventListener("click", () => {
   getElement(".modal-title").innerHTML = "Thêm sản phẩm";
   getElement(".modal-footer").innerHTML = `
     <button class="btn btn-secondary" data-dismiss="modal">Huỷ</button>
